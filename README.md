@@ -23,6 +23,8 @@
 
 训练协议：首轮 64 题×4 候选，续训 3 轮每轮 128 题×4（train-only）；只有组内 reward 有差异（有对有错）的题组才产生更新。
 
+> **数字出处（勿混轮次）**：表中 19%→23%、17%→21.5% 为 **round4 终评**（`results/multi_round/round4_sft_*` vs `round4_grpo_*`：test 34→43 正确，newly_correct 12 / regressed 3）；round1 GRPO test 为 20.0%（`results/grpo_test.summary.json`）；SFT test 严格率三次复测 16.0% / 17.0% / 17.5%，表内取 round4 口径 17.0%。
+
 完整逐题结果与配对分析见 `results/`（`*.summary.json`、`grpo_paired_analysis.json`、`grpo_train_metrics.json`）。
 
 > 定位声明：这是一个**教学向最小闭环**（toy experiment）——验证"可验证奖励 + 组相对优势"在小模型上各环节的真实有效性，不是多 epoch、大规模生产级 RL 训练，也不以刷 GSM8K SOTA 为目标。
