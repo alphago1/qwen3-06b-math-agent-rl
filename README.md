@@ -27,7 +27,7 @@
 
 完整逐题结果与配对分析见 `results/`（`*.summary.json`、`grpo_paired_analysis.json`、`grpo_train_metrics.json`）。
 
-> 定位声明：这是一个**教学向最小闭环**（toy experiment）——验证"可验证奖励 + 组相对优势"在小模型上各环节的真实有效性，不是多 epoch、大规模生产级 RL 训练，也不以刷 GSM8K SOTA 为目标。
+> 定位声明：这是一个**小规模完整闭环实验**——验证"可验证奖励 + 组相对优势"在小模型上各环节的真实有效性；实验规模为单卡、少轮次，未做多 epoch 与大规模分布式扩展，也不以刷 GSM8K SOTA 为目标。
 
 ## 方法要点
 
