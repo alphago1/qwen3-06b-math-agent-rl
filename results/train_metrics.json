@@ -1,0 +1,15 @@
+{
+  "samples": 2037,
+  "wall_seconds": 198.31929421424866,
+  "train": {
+    "train_runtime": 198.1419,
+    "train_samples_per_second": 10.281,
+    "train_steps_per_second": 0.646,
+    "total_flos": 2055275450597376.0,
+    "train_loss": 0.3950297774281353,
+    "epoch": 1.0
+  },
+  "rank": 16,
+  "lr": 2e-05,
+  "epochs": 1.0
+}

@@ -1,0 +1,13 @@
+{
+  "groups": 128,
+  "trajectories": 512,
+  "exact": 139,
+  "updates": 45,
+  "sample_exact_rate": 0.271484375,
+  "wall_seconds": 500.94039130210876,
+  "problems": 128,
+  "group_size": 4,
+  "lr": 1e-06,
+  "beta": 0.05,
+  "seed": 2029
+}

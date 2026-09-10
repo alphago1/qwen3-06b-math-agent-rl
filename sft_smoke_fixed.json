@@ -1,0 +1,74 @@
+[
+  {
+    "source_id": 6591,
+    "question": "Gabe has three songs on his playlist. “The Best Day” is 3 minutes, “Raise the Roof” is 2 minutes, and “Rap Battle” is 3 minutes. How many times can Gabe listen to his entire playlist on the 40-minute ride to his wrestling match?",
+    "answer": "5",
+    "prediction": "32",
+    "correct": false,
+    "relaxed_prediction": "32",
+    "relaxed_correct": false,
+    "final_text": "Using the verified calculations above, the answer is 32.\n#### 32",
+    "tool_calls": [
+      "3+2+3",
+      "40-8"
+    ],
+    "tool_errors": [],
+    "repeat_calls": 0,
+    "latency": 0.35733842849731445,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Solve the grade-school math problem. Use the calculator tool for every arithmetic operation. Use only values supported by the question or prior tool results. End with the final numeric answer in the exact format #### number."
+      },
+      {
+        "role": "user",
+        "content": "Gabe has three songs on his playlist. “The Best Day” is 3 minutes, “Raise the Roof” is 2 minutes, and “Rap Battle” is 3 minutes. How many times can Gabe listen to his entire playlist on the 40-minute ride to his wrestling match?"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-c044162353f34e2291ad8949a12b1f1b",
+            "type": "function",
+            "function": {
+              "name": "calculator",
+              "arguments": "{\"expression\": \"3+2+3\"}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-c044162353f34e2291ad8949a12b1f1b",
+        "name": "calculator",
+        "content": "8"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-07a384e938e94169bc3003f1437c0824",
+            "type": "function",
+            "function": {
+              "name": "calculator",
+              "arguments": "{\"expression\": \"40-8\"}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-07a384e938e94169bc3003f1437c0824",
+        "name": "calculator",
+        "content": "32"
+      },
+      {
+        "role": "assistant",
+        "content": "Using the verified calculations above, the answer is 32.\n#### 32",
+        "tool_calls": []
+      }
+    ]
+  }
+]

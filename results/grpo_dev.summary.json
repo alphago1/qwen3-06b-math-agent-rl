@@ -1,0 +1,12 @@
+{
+  "model": "qwen3-0.6b-grpo",
+  "n": 100,
+  "correct": 23,
+  "accuracy": 0.23,
+  "relaxed_correct": 23,
+  "relaxed_accuracy": 0.23,
+  "tool_use": 99,
+  "tool_errors": 14,
+  "repeat_calls": 10,
+  "avg_latency": 2.462449595928192
+}

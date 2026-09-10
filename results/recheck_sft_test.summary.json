@@ -1,0 +1,12 @@
+{
+  "model": "qwen3-0.6b-sft",
+  "n": 200,
+  "correct": 35,
+  "accuracy": 0.175,
+  "relaxed_correct": 35,
+  "relaxed_accuracy": 0.175,
+  "tool_use": 199,
+  "tool_errors": 16,
+  "repeat_calls": 36,
+  "avg_latency": 1.8534739375114442
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "source_id": 6591,
+    "question": "Gabe has three songs on his playlist. “The Best Day” is 3 minutes, “Raise the Roof” is 2 minutes, and “Rap Battle” is 3 minutes. How many times can Gabe listen to his entire playlist on the 40-minute ride to his wrestling match?",
+    "answer": "5",
+    "prediction": null,
+    "correct": false,
+    "relaxed_prediction": "8",
+    "relaxed_correct": false,
+    "final_text": "8",
+    "tool_calls": [
+      "3 + 2 + 3"
+    ],
+    "tool_errors": [],
+    "repeat_calls": 0,
+    "latency": 0.16674041748046875,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Solve the grade-school math problem. Use the calculator tool for every arithmetic operation. Use only values supported by the question or prior tool results. End with the final numeric answer in the exact format #### number."
+      },
+      {
+        "role": "user",
+        "content": "Gabe has three songs on his playlist. “The Best Day” is 3 minutes, “Raise the Roof” is 2 minutes, and “Rap Battle” is 3 minutes. How many times can Gabe listen to his entire playlist on the 40-minute ride to his wrestling match?"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-3230c9e6c90d4fc8987d4eb8f628fac7",
+            "type": "function",
+            "function": {
+              "name": "calculator",
+              "arguments": "{\"expression\": \"3 + 2 + 3\"}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-3230c9e6c90d4fc8987d4eb8f628fac7",
+        "name": "calculator",
+        "content": "8"
+      },
+      {
+        "role": "assistant",
+        "content": "8",
+        "tool_calls": []
+      }
+    ]
+  }
+]
